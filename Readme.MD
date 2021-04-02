@@ -16,3 +16,8 @@ YouCompress - Free online file compressor
 ```
 https://www.youcompress.com/
 ```
+
+Mozilla - Form Hints
+```
+https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/forms/Basic_form_hints
+```
