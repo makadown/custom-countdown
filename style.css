@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 html {
   box-sizing: border-box;
 }
@@ -14,6 +13,7 @@ body {
 }
 
 /* Video Background */
+
 .video-background {
   position: fixed;
   right: 0;
@@ -39,6 +39,7 @@ video {
 }
 
 /* Container */
+
 .container {
   min-width: 580px;
   min-height: 304px;
@@ -65,6 +66,7 @@ h1 {
 }
 
 /* Form */
+
 .form {
   width: 480px;
 }
@@ -86,11 +88,12 @@ input {
 }
 
 /* Button */
+
 button {
   width: 100%;
   height: 40px;
   border-radius: 20px;
-  margin-top: 15px;
+  margin-top: 25px;
   border: none;
   text-transform: uppercase;
   background: #3c9712;
@@ -104,12 +107,14 @@ button:hover {
 }
 
 /* Countdown */
+
 ul {
   margin-left: -45px;
 }
 
 li {
-
+  display: inline-block;
+  /* Esto hace que todo li se vea en 1 solo renglon*/
   font-size: 30px;
   list-style-type: none;
   padding: 10px;
@@ -123,74 +128,90 @@ li span {
 }
 
 /* Complete */
+
 .complete {
   position: relative;
   top: 60px;
 }
 
+.complete-title {
+  animation: complete 2s infinite;
+}
+
+@keyframes complete {
+  0% {
+    color: rgb(223, 17, 17);
+  }
+
+  25% {
+    color: rgb(209, 223, 17);
+  }
+  50% {
+    color: rgb(17, 223, 86);
+    transform: scale(1.5);
+  }
+  75% {
+    color: rgb(38, 17, 223);
+  }
+  100% {
+    color: rgb(223, 17, 120);
+  }
+}
 
 /* Media Query: Large Smartphone (Vertical) */
+
 @media screen and (max-width: 1117px) {
   .video-background {
     height: 100vh;
     width: 100vw;
   }
-  
   video {
     object-fit: cover;
     object-position: 70%;
     margin-top: -1px;
   }
-/*
+  /*
   .container {
     min-height: 245px;
     padding: 20px;
     margin: 10px;
   }*/
-
   .input-container {
     top: unset;
   }
-
   .countdown {
     position: relative;
     top: 10px;
   }
-
   .form {
     width: unset;
   }
-
   input {
     width: 93%;
   }
-
   h1 {
     font-size: 20px;
   }
-
   li {
-    font-size: 15px;
+    font-size: 30px;
   }
-
   li span {
-    font-size: 40px;
+    font-size: 80px;
   }
 }
 
 /* Media Query: Large Smartphone (Vertical) */
+
 @media screen and (max-width: 600px) {
   .video-background {
     height: 100vh;
     width: 100vw;
   }
-  
   video {
     object-fit: cover;
     object-position: 70%;
     margin-top: -1px;
   }
-
   .container {
     min-width: unset;
     width: 95vw;
@@ -198,32 +219,25 @@ li span {
     padding: 20px;
     margin: 10px;
   }
-
   .input-container {
     top: unset;
   }
-
   .countdown {
     position: relative;
     top: 10px;
   }
-
   .form {
     width: unset;
   }
-
   input {
     width: 93%;
   }
-
   h1 {
     font-size: 20px;
   }
-
   li {
     font-size: 15px;
   }
-
   li span {
     font-size: 40px;
   }

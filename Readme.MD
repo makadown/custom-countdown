@@ -21,3 +21,8 @@ Mozilla - Form Hints
 ```
 https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/forms/Basic_form_hints
 ```
+
+Javascript Timing Events
+```
+https://www.w3schools.com/js/js_timing.asp
+```
